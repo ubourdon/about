@@ -15,8 +15,22 @@ header {
     margin-bottom: 20px;
 }
 
+nav li {
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    float: left;
+    margin-right: .5em;
+}
+
 #resume {
-    width: 25%;
+    width: 26%;
+}
+
+#resume > aside:nth-child(2) p {
+    margin: .2em;
 }
 
 aside {
@@ -25,15 +39,11 @@ aside {
     text-align: justify;
     padding: 10px 20px 10px 20px;
     color: #f5f5f5;
-    margin-bottom: 15px;
+    margin-bottom: .5em;
 }
 
 aside h2 {
-
-}
-
-#resume > aside:nth-child(2) p {
-    margin: 0;
+    margin-top : 0;
 }
 
 article {
@@ -42,14 +52,42 @@ article {
     float: right;
     padding: 0 20px 20px 20px;
     text-align: justify;
+    display: none;
+    height: 595px;
 }
 
-#xp {
-    /*display: none;*/
+article.visible {
+    display: block;
 }
 
 article h2 {
     text-align: center;
+}
+
+article h3 + ul li, article h4 + ul li {
+    list-style: none;
+    float: left;
+    margin-right: .5em;
+    padding: .2em .5em;
+    margin-bottom: .3em;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    font-size: .8em;
+}
+
+article h3 + ul, article h4 + ul {
+    padding: 0;
+    margin: 0;
+}
+
+#coaching {
+    cursor: pointer;
+}
+
+article h4 {
+    cursor: pointer;
+    margin: 1em 0 .5em 0;
 }
 
 .clear {
