@@ -10,50 +10,94 @@ a {
 }
 
 header {
-    height: 40px;
     background-color: grey;
-    margin-bottom: 20px;
+    padding: .5em;
+    padding-right: 0;
+    color: #f5f5f5;
+    width: 98%;
 }
 
-nav li {
+header h1 {
     margin: 0;
+    margin-bottom: .2em;
+    font-size: 1.5em;
 }
 
-nav li {
+header span {
+    font-size: 1.1em;
+    color: #444444;
+}
+
+header > span:nth-child(4) {
+    font-size: .9em;
+}
+
+header a {
+    display: block;
+    font-size: .7em;
+    font-weight: bold;
+}
+
+header nav {
+    margin-top: 1em;
+    float: right;
+}
+
+header nav li {
     list-style: none;
     float: left;
-    margin-right: .5em;
+    padding: 1em;
+    margin-bottom: .3em;
+    background-color: #6a6a6a;
+    font-size: .8em;
+    cursor: pointer;
+    border: 2px solid #6a6a6a;
+}
+
+header nav li:hover {
+    border: 2px solid #daa520;
+    border-radius: 2px;
+    font-style: italic;
+}
+
+header nav li.selected {
+    border-radius: 2px;
+
+    border: 2px solid #daa520;
+    background-color: #daa520;
+    color: #6a6a6a;
 }
 
 #resume {
     width: 26%;
+    margin-right: 0;
 }
 
 #resume > aside:nth-child(2) p {
     margin: .2em;
 }
 
-aside {
+#resume aside {
     background-color: #808080;
     font-size: 0.8em;
     text-align: justify;
     padding: 10px 20px 10px 20px;
     color: #f5f5f5;
-    margin-bottom: .5em;
+    margin-bottom: 0;
 }
 
-aside h2 {
+#resume aside h2 {
     margin-top : 0;
 }
 
 article {
+    margin-left: 0;
     width: 70%;
-    border: solid 1px grey;
     float: right;
     padding: 0 20px 20px 20px;
     text-align: justify;
     display: none;
-    height: 595px;
+    height: 589px;
 }
 
 article.visible {
@@ -62,6 +106,10 @@ article.visible {
 
 article h2 {
     text-align: center;
+    background-color: grey;
+    padding: .6em;
+    margin: 0;
+    color: #f5f5f5;
 }
 
 article h3 + ul li, article h4 + ul li {
@@ -74,6 +122,7 @@ article h3 + ul li, article h4 + ul li {
     border: 1px solid #cccccc;
     border-radius: 2px;
     font-size: .8em;
+    cursor: pointer;
 }
 
 article h3 + ul, article h4 + ul {
@@ -81,13 +130,42 @@ article h3 + ul, article h4 + ul {
     margin: 0;
 }
 
-#coaching {
-    cursor: pointer;
+article h4 {
+    margin: 1em 0 .5em 0;
 }
 
-article h4 {
-    cursor: pointer;
-    margin: 1em 0 .5em 0;
+.compDiv {
+    font-size: .6em;
+    width: 350px;
+    height: 60px;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #daa520;
+    border-radius: 2px;
+    background-color: #eeeeee;
+}
+
+.compDiv ul {
+    margin: 0;
+    padding: 0 .5em;
+}
+
+.compDiv li {
+    list-style: none;
+    margin-top: .5em;
+}
+
+.compDiv li:first-child {
+    margin-top: 0;
+}
+
+.compDiv p {
+    margin: .3em;
+}
+
+.check {
+    border: 1px solid #daa520;
+    border-radius: 2px;
 }
 
 .clear {

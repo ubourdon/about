@@ -1,11 +1,39 @@
 (function() {
-  var h4_article_selector;
+  var competences_selector, h4_article_selector;
 
-  $(document).ready(function() {});
+  $(document).ready(function() {
+    CV.listenTag();
+    return $(".compAside").hide();
+  });
 
   h4_article_selector = "article h4";
 
+  competences_selector = "article li";
+
   this.CV = {
+    listenTag: function() {
+      return $(competences_selector).hover(function() {
+        return CV.handlerIn(this);
+      }, function() {
+        return CV.handlerOut(this);
+      });
+    },
+    handlerIn: function(elem) {
+      var left;
+      left = $(elem).position().left;
+      $("#" + $(elem).attr("id") + "Div").show();
+      $("#" + $(elem).attr("id") + "Div").offset({
+        left: left - 70
+      });
+      $(elem).addClass("check");
+      return $(".css-arrow-top").offset({
+        left: left + 40
+      });
+    },
+    handlerOut: function(elem) {
+      $("#" + $(elem).attr("id") + "Div").hide();
+      return $(elem).removeClass("check");
+    },
     hideAllSubTitle: function() {
       return $("article h4 + ul").hide();
     },

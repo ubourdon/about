@@ -5,23 +5,28 @@
     <title>Ugo Bourdon CV !</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" media="screen" href="cv.css">
+    <link rel="stylesheet" media="screen" href="geo.css">
     <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
     <script src="js/cv.js" type="text/javascript"></script>
 </head>
 
-<header>
-    <nav>
-        <ul>
-            <li>compétences</li>
-            <li>expériences</li>
-            <li>formations</li>
-        </ul>
-    </nav>
-    <a href="mailto:bourdon.ugo@gmail.com">me contacter</a>
-</header>
-<div class="clear"></div>
-
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li class="selected">compétences</li>
+                <li>expériences</li>
+                <li>formations</li>
+            </ul>
+        </nav>
+
+        <h1>Ugo Bourdon</h1>
+        <span>développeur Scala/Agile</span>
+        <span>5 ans d'expérience</span>
+        <a href="mailto:bourdon.ugo@gmail.com">me contacter</a>
+    </header>
+    <div class="clear"></div>
+
     <article id="competences" class="visible">
         <h2>Compétences</h2>
         <h3>Types d’intervention</h3>
@@ -29,8 +34,28 @@
             <li>Conception</li>
             <li>Développement</li>
             <li id="coaching">Coaching Agile</li>
+            <li id="scrum">Scrum Master</li>
         </ul>
         <div class="clear"></div>
+
+        <aside id="coachingDiv" class="compAside">
+            <div class='css-arrow-top'></div>
+            <div class="compDiv">
+                <ul>
+                    <li>Formation aux pratiques de développement AGILE : TDD, pair programming, intégration continue, ..<li/>
+                    <li>Mise en place de gestion de projet itératif et incrémental</li>
+                    <li>Apport d'une culture d'amélioration continue</li>
+                </ul>
+            </div>
+        </aside>
+        <aside id="scrumDiv" class="compAside">
+            <div class='css-arrow-top'></div>
+            <div class="compDiv">
+                <ul>
+                    <li>Depuis Septembre 2012 à Vidal<li/>
+                </ul>
+            </div>
+        </aside>
 
         <h3>Compétences techniques</h3>
 
@@ -39,7 +64,8 @@
             <li>Scala</li>
             <li>Java/Jee</li>
             <li>Html/Css</li>
-            <li>Javascript, coffeescript</li>
+            <li>Javascript</li>
+            <li>Coffeescript</li>
             <li>Sql</li>
         </ul>
         <div class="clear"></div>
@@ -58,16 +84,10 @@
         </ul>
         <div class="clear"></div>
 
-        <h4>Systèmes</h4>
-        <ul>
-            <li>GNU/Linux (debian)</li>
-            <li>Windows</li>
-        </ul>
-        <div class="clear"></div>
-
         <h4>Usine logicielle</h4>
         <ul>
-            <li>Maven, Nexus</li>
+            <li>Maven</li>
+            <li>Nexus</li>
             <li>Sbt</li>
             <li>Ant</li>
             <li>git/github</li>
@@ -94,6 +114,12 @@
         </ul>
         <div class="clear"></div>
 
+        <h4>Systèmes</h4>
+        <ul>
+            <li>GNU/Linux (debian)</li>
+            <li>Windows</li>
+        </ul>
+        <div class="clear"></div>
     </article>
 
     <article id="xp">
