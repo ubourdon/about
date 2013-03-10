@@ -22,7 +22,7 @@ competences_selector = "article li"
     $("#" + $(elem).attr("id") + "Div").show()
     $("#" + $(elem).attr("id") + "Div").offset({ left: left - 70 })
     $(elem).addClass("check")
-    $(".css-arrow-top").offset({ left: left + 40 })
+    $(".css-arrow-top").offset({ left: left + 20 })
 
   handlerOut : (elem) ->
     $("#" + $(elem).attr("id") + "Div").hide()

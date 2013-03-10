@@ -27,7 +27,7 @@
       });
       $(elem).addClass("check");
       return $(".css-arrow-top").offset({
-        left: left + 40
+        left: left + 20
       });
     },
     handlerOut: function(elem) {
