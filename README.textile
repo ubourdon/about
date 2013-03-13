@@ -1,1 +1,3 @@
 h1. My personnal CV
+
+see here:"http://ubouron.github.com/about"
