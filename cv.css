@@ -1,7 +1,8 @@
 body {
     font-family:tahoma, geneva, sans-serif;
     margin: auto;
-    padding: 0 30px 0 30px;
+    padding: 0;
+    background-color: grey;
 }
 
 a {
@@ -10,22 +11,24 @@ a {
 }
 
 header {
-    background-color: grey;
+    background-color: dimgrey;
     padding: .5em;
-    padding-right: 0;
     color: #f5f5f5;
-    width: 98%;
+    margin-bottom: 30px;
 }
 
 header h1 {
-    margin: 0;
-    margin-bottom: .2em;
+    margin: 0 0 .2em 32px;
     font-size: 1.5em;
 }
 
 header span {
     font-size: 1.1em;
     color: #444444;
+}
+
+header > span:nth-child(3) {
+    padding-left: 32px;
 }
 
 header > span:nth-child(4) {
@@ -36,10 +39,12 @@ header a {
     display: block;
     font-size: .7em;
     font-weight: bold;
+    padding-left: 32px;
 }
 
 header nav {
     margin-top: 1em;
+    margin-right: 65px;
     float: right;
 }
 
@@ -66,11 +71,12 @@ header nav li.selected {
     border: 2px solid #daa520;
     background-color: #daa520;
     color: #6a6a6a;
+    font-weight: bold;
 }
 
 #resume {
-    width: 26%;
-    margin-right: 0;
+    width: 27%;
+    margin-top: 45px;
 }
 
 #resume > aside:nth-child(2) p {
@@ -81,7 +87,7 @@ header nav li.selected {
     background-color: #808080;
     font-size: 0.8em;
     text-align: justify;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 10px 40px;
     color: #f5f5f5;
     margin-bottom: 0;
 }
@@ -92,9 +98,10 @@ header nav li.selected {
 
 article {
     margin-left: 0;
-    width: 70%;
+    width: 68%;
     float: right;
-    padding: 0 20px 20px 20px;
+    padding: 0;
+    margin-right: 40px;
     text-align: justify;
     display: none;
 }
@@ -103,9 +110,13 @@ article.visible {
     display: block;
 }
 
+article section {
+    padding: 0 20px 20px 20px;
+}
+
 article h2 {
     text-align: center;
-    background-color: grey;
+    background-color: dimgrey;
     padding: .6em;
     margin: 0;
     color: #f5f5f5;
