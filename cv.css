@@ -105,6 +105,84 @@ ul.menu, ul.social-icons {
     top: 0;
 }
 
+ul.social-icons {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-color: #F1F1F1 -moz-use-text-color #F1F1F1 #F1F1F1;
+    border-image: none;
+    border-radius: 5px 0 0 5px;
+    border-style: solid none solid solid;
+    border-width: 1px medium 1px 1px;
+    left: -40px;
+    margin: 0;
+    margin-top: 75px;
+    overflow: hidden;
+    padding: 9px 9px 9px 8px;
+    width: 22px;
+}
+
+ul.menu, ul.social-icons {
+    position: absolute;
+    top: 0;
+}
+
+.social-icons li.twitter-ico {
+    background-position: -22px 0;
+}
+
+.social-icons li.twitter-ico:hover {
+    background-position: 0 0;
+}
+
+.social-icons li.facebook-ico {
+    background-position: -22px -22px;
+}
+
+.social-icons li.facebook-ico:hover {
+    background-position: 0 -22px;
+}
+
+.social-icons li.linkedin-ico {
+    background-position: -22px -44px;
+}
+
+.social-icons li.linkedin-ico:hover {
+    background-position: 0 -44px;
+}
+
+.social-icons li.blog-ico {
+    background-position: -22px -66px;
+}
+
+.social-icons li.blog-ico:hover {
+    background-position: 0 -66px;
+}
+
+.social-icons li a {
+    display: block;
+    outline: medium none;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.social-icons li:last-child {
+    margin-bottom: 0 !important;
+}
+
+.social-icons li {
+    background: url("img/social-icons-sprite.png") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    list-style: none outside none;
+    margin-bottom: 13px;
+    text-indent: -999em;
+    width: 22px;
+}
+
 ul.menu li {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
