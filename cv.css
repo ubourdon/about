@@ -16,6 +16,15 @@ a {
     outline: medium none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 10px 0;
+    text-rendering: optimizelegibility;
+}
+
 h1 {
     margin: 10px 0 0;
 }
@@ -37,6 +46,7 @@ li {
     width: 60%;
     height: 100%;
     margin: 0 auto;
+    margin-top: 20px;
     min-height: 100%;
     position: relative;
 }
@@ -58,17 +68,13 @@ header h2, h1 {
 }
 
 .download-cv {
-    margin: 0;
-}
-
-.download-cv {
     background: none repeat scroll 0 0 #F5F5F5;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 1px 5px #DADADA inset;
     color: #000000;
     font-weight: bold;
     line-height: 14px;
-    /*margin: 15px 0 0;*/
+    margin: 0;
     padding: 4px;
 }
 
@@ -352,9 +358,46 @@ ul.menu li:hover, ul.menu li.active {
 }
 
 
+
+
+/*********************
+*   CONTENT-PAGES    *
+**********************/
+
+.content-pages {
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    background: url("img/content-bdt.png") no-repeat scroll 0 0 #FFFFFF;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px rgba(43, 43, 43, 0.05);
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 9px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: top 300ms ease 0s, opacity 500ms ease 0s;
+}
+
 .content.home.on {
     height: auto !important;
     min-height: 398px;
+}
+
+.content.about {
+    width: 100%;
+    padding: 0;
+}
+
+.content.portfolio {
+    width: 100%;
+    padding: 30px 0 30px 20px;
 }
 
 .content.on {
@@ -364,17 +407,10 @@ ul.menu li:hover, ul.menu li.active {
     z-index: 21;
 }
 
-.content {
-    width: 100%;
-    -moz-box-sizing: border-box;
-    background: url("img/content-bdt.png") no-repeat scroll 0 0 #FFFFFF;
-    border-radius: 0 0 5px 5px;
-    box-shadow: 0 0 10px rgbal(43, 43, 43, 0.05);
-    left: 0;
-    overflow: hidden;
-    padding: 9px;
-    right: 0;
-    top: 0;
+.content.off {
+    opacity: 0;
+    top: 150px;
+    z-index: 20;
 }
 
 .anythingSlider .anythingBase {
@@ -399,14 +435,236 @@ ul.menu li:hover, ul.menu li.active {
 
 
 
+/********************
+*      ABOUT        *
+*********************/
+
+.content.about .span6.bg {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FDFDFD;
+    border-color: -moz-use-text-color #F6F6F6 #F6F6F6;
+    border-image: none;
+    border-radius: 0 0 0 5px;
+    border-right: 1px solid #F6F6F6;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    margin-top: 1px;
+}
+.content.about .span6 {
+    height: 100%;
+    margin: 0;
+    min-height: 100%;
+    position: relative;
+    width: 50%;
+}
+.row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+}
+.row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+}
+.row-fluid .span6 {
+    width: 48.7179%;
+}
+.row-fluid [class*="span"] {
+    -moz-box-sizing: border-box;
+    display: block;
+    float: left;
+    margin-left: 2.5641%;
+    min-height: 30px;
+    width: 100%;
+}
+.row-fluid .span6 {
+    width: 48.9362%;
+}
+.row-fluid [class*="span"] {
+    -moz-box-sizing: border-box;
+    display: block;
+    float: left;
+    margin-left: 2.12766%;
+    min-height: 30px;
+    width: 100%;
+}
+.span6 {
+    width: 570px;
+}
+[class*="span"] {
+    float: left;
+    margin-left: 30px;
+    min-height: 1px;
+}
+.span6 {
+    width: 460px;
+}
+[class*="span"] {
+    float: left;
+    margin-left: 20px;
+    min-height: 1px;
+}
+
+.block {
+    font-size: 16px;
+    padding: 17px 29px 6px;
+    position: relative;
+}
+
+.content h3 {
+    background: url("img/about-bdt-p.png") repeat-x scroll 0 100% transparent;
+    color: #231F20;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 10px 0;
+    padding-bottom: 15px;
+    padding-left: 37px;
+    position: relative;
+}
+
+.ml-color-666666 .content h3 i {
+    background-image: url("img/about-icon-sprite-666666.png");
+}
+h3 i.about-me-ico {
+    background-position: 0 0;
+}
+.content h3 i {
+    background: url("img/about-icon-sprite.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+}
+
+.content.about .span6.bg p {
+    color: #2B2B2B;
+    line-height: 24px;
+}
+p {
+    margin: 0 0 10px;
+}
 
 
+i.shadow-bottom {
+    width: 485px;
+}
+i.shadow-bottom {
+    bottom: -5px;
+    box-shadow: 0 1px 5px #DADADA inset;
+    display: block;
+    height: 5px;
+    left: -1px;
+    position: absolute;
+    width: 345px;
+    z-index: 20;
+}
+
+/*.ml-color-666666 .content h3 i {
+    background-image: url("img/about-icon-sprite-666666.png");
+}*/
+h3 i.empl-ico {
+    background-position: 0 -30px;
+}
+.content h3 i {
+    background: url("img/about-icon-sprite.png") no-repeat scroll 0 0 transparent;
+    background-image: url("img/about-icon-sprite-666666.png");
+    display: block;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+}
 
 
+.ml-color-666666 .categories-bg ul li.active a, .ml-color-666666 .categories-bg ul li a:hover, .ml-color-666666 .inform p span, .ml-color-666666 .block li .client-comm span.company, .ml-color-666666 .block li .educat, .ml-color-666666 .block li .prod-name, .ml-color-666666 .project-info-h1 p.span, .ml-color-666666 ul.menu li a, .ml-color-666666 h1 .name {
+    color: #666666;
+}
+.block li .prod-name {
+    font-size: 16px;
+}
+.block li .prod-name {
+    color: #E75330;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.block li span.prof {
+    background: url("img/about-icon-sprite-2.png") no-repeat scroll 0 2px transparent;
+    color: #231F20;
+    padding-left: 27px;
+}
+
+span.sep {
+    color: #D4D4D4 !important;
+    margin: 0 7px;
+}
+
+.block li span.date {
+    color: #D4D4D4;
+}
 
 
+.span6.bg .block.empl p {
+    color: #5E5E5E;
+}
+.content.about .span6.bg p {
+    color: #2B2B2B;
+    line-height: 24px;
+}
+p {
+    margin: 0 0 10px;
+}
 
 
+.span6.bg ul.block.education, .span6.bg ul.block.empl {
+    margin: 0;
+}
+
+h3 i.empl-ico {
+    background-position: 0 -30px;
+}
+
+h3 i.education-ico {
+    background-position: 0 -60px;
+}
+
+
+.span6.bg .block.education p {
+    color: #838383;
+}
+.content.about .span6.bg p {
+    color: #2B2B2B;
+    line-height: 24px;
+}
+
+
+i.shadow-bottom {
+    bottom: -5px;
+    box-shadow: 0 1px 5px #DADADA inset;
+    display: block;
+    height: 5px;
+    left: -1px;
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+}
+
+.span6.bg ul.block.education li, .span6.bg ul.block.reviews li, .span6.bg .block.empl li {
+    background: url("img/about-bdt-p.png") repeat-x scroll 0 0 transparent;
+    list-style: none outside none;
+    padding: 12px 0 0;
+}
+
+h3 i.reviews-ico {
+    background-position: 0 -210px;
+}
 /*a {
     text-decoration: none;
     color: orange;
