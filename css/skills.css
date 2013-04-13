@@ -1,0 +1,75 @@
+.nano.scroll.has-scrollbar {
+    overflow: hidden;
+}
+.block .scroll {
+    height: 870px;
+    margin-bottom: 22px;
+    overflow: auto;
+    padding: 10px 0 0;
+    width: 100%;
+}
+.nano {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.skill.p-0 {
+    padding: 0 0 10px;
+}
+
+.skill {
+    background: url("../img/about-bdt-p.png") repeat-x scroll 0 100% transparent;
+    display: block;
+    padding: 25px 0 10px;
+    position: relative;
+    width: 100%;
+}
+
+.scroll .skill h4 {
+    color: #D4D4D4;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+}
+
+.scroll .skill h5 {
+    color: #231F20;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 11px;
+}
+
+.skill .level {
+    -moz-box-sizing: border-box;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 9px 9px 9px 9px;
+    box-shadow: 0 1px 5px #DADADA inset;
+    display: block;
+    height: 24px;
+    margin-bottom: 9px;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+    width: 100%;
+}
+
+.skill .level .level-length {
+    background: linear-gradient(to bottom, #FD7959 0%, #E75330 100%) repeat scroll 0 0 transparent;
+    border-radius: 6px 0 0 6px;
+    box-shadow: 0 0 0 1px #E75330 inset, 0 1px 1px #FFBAAA inset;
+    display: block;
+    height: 100%;
+    position: relative;
+    transition: width 2s ease 0s;
+    width: 0;
+    /*font-style: normal;*/
+    font-size: .9em;
+    color: white;
+    font-weight: bold;
+}

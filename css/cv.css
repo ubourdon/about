@@ -1,5 +1,5 @@
 body {
-    background: url("img/body-bg.png") repeat scroll 0 0 transparent;
+    background: url("../img/body-bg.png") repeat scroll 0 0 transparent;
     font-family: Arial,Helvetica,sans-serif;
     height: 100%;
     min-height: 100%;
@@ -135,7 +135,7 @@ a {
 .content {
     width: 100%;
     -moz-box-sizing: border-box;
-    background: url("img/content-bdt.png") no-repeat scroll 0 0 #FFFFFF;
+    background: url("../img/content-bdt.png") no-repeat scroll 0 0 #FFFFFF;
     border-radius: 0 0 5px 5px;
     box-shadow: 0 0 10px rgba(43, 43, 43, 0.05);
     left: 0;
@@ -275,7 +275,7 @@ a {
 }
 
 .content h3 {
-    background: url("img/about-bdt-p.png") repeat-x scroll 0 100% transparent;
+    background: url("../img/about-bdt-p.png") repeat-x scroll 0 100% transparent;
     color: #231F20;
     font-size: 22px;
     line-height: 30px;
@@ -290,7 +290,7 @@ h3 i.about-me-ico {
 }
 
 .content h3 i {
-    background: url("img/about-icon-sprite.png") no-repeat scroll 0 0 transparent;
+    background: url("../img/about-icon-sprite.png") no-repeat scroll 0 0 transparent;
     display: block;
     height: 30px;
     left: 0;
@@ -323,7 +323,7 @@ h3 i.empl-ico {
 }
 
 .content h3 i {
-    background: url("img/about-icon-sprite.png") no-repeat scroll 0 0 transparent;
+    background: url("../img/about-icon-sprite.png") no-repeat scroll 0 0 transparent;
     display: block;
     height: 30px;
     left: 0;
@@ -350,7 +350,7 @@ h3 i.empl-ico {
 }
 
 .block li span.prof {
-    background: url("img/about-icon-sprite-2.png") no-repeat scroll 0 2px transparent;
+    background: url("../img/about-icon-sprite-2.png") no-repeat scroll 0 2px transparent;
     color: #231F20;
     padding-left: 27px;
 }
@@ -399,7 +399,7 @@ h3 i.education-ico {
 }
 
 .span6.bg ul.block.education li, .span6.bg ul.block.reviews li, .span6.bg .block.empl li {
-    background: url("img/about-bdt-p.png") repeat-x scroll 0 0 transparent;
+    background: url("../img/about-bdt-p.png") repeat-x scroll 0 0 transparent;
     list-style: none outside none;
     padding: 12px 0 0;
 }

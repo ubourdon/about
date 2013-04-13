@@ -1,5 +1,6 @@
 $(document).ready ->
   CV.listenMenu()
+  CV.showSkills()
   #CV.listenTag()
   #$(".compAside").hide()
   #CV.hideAllSubTitle()
@@ -41,6 +42,33 @@ $(document).ready ->
   showNewActivePage : (pageToActive) ->
     $(pageToActive).removeClass("off")
     $(pageToActive).addClass("on")
+
+
+
+  showSkills : ->
+    $("div.skill div.level i").each (i) ->
+      CV.showLevel this
+
+  showLevel : (elem) ->
+    level = elem.className.split(/\s+/)[1]
+    if(level == undefined)
+      level = "noob"
+
+    width = '25%'
+    label = "<span style='padding-left: 20%;'>débutant</span>"
+
+    if(level.contains("mid"))
+      width = '50%'
+      label = "<span style='padding-left: 45%;'>intermédiaire</span>"
+    else if(level.contains("exp"))
+      width = '75%'
+      label = "<span style='padding-left: 70%;'>experimenté</span>"
+    else if(level.contains("sup"))
+      width = '100%'
+      label = "<span style='padding-left: 95%;'>expert</span>"
+
+    $(elem).css({'width': width})
+    $(elem).html(label)
 
   ###listenTag : ->
     $(competences_selector).hover(

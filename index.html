@@ -4,9 +4,10 @@
 <head>
     <title>Ugo Bourdon CV !</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" media="screen" href="cv.css">
-    <link rel="stylesheet" media="screen" href="menu.css">
-    <link rel="stylesheet" media="screen" href="geo.css">
+    <link rel="stylesheet" media="screen" href="css/cv.css">
+    <link rel="stylesheet" media="screen" href="css/menu.css">
+    <link rel="stylesheet" media="screen" href="css/skills.css">
+    <!--<link rel="stylesheet" media="screen" href="css/geo.css">-->
     <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
     <script src="js/cv.js" type="text/javascript"></script>
 </head>
@@ -31,13 +32,13 @@
             <li class="blog-ico mb-0"><a href="http://demon-agile.blogspot.fr/">blog</a></li>
         </ul>
         <ul id="main-menu" class="menu">
-            <li data-page-active="home" class="home active">
+            <li data-page-active="home" class="home">
                 <a data-page="home" href="#home">
                     <i class="home-ico"></i>
                     Home
                 </a>
             </li>
-            <li data-page-active="about" class="about">
+            <li data-page-active="about" class="about active">
                 <a data-page="about" href="#about">
                     <i class="about-ico"></i>
                     About
@@ -58,11 +59,11 @@
         </ul>
 
         <div class="content-pages">
-            <div id="page-home" class="content home on">
+            <div id="page-home" class="content home off">
 
             </div>
 
-            <div id="page-about" class="content about off">
+            <div id="page-about" class="content about on">
             <div class="row-fluid">
                 <div class="span6 bg">
 
@@ -92,19 +93,20 @@
                     <ul class="block empl">
                         <h3><i class="empl-ico"></i>Emploi</h3>
                         <li style="padding: 8px 0px 0px; background: none repeat scroll 0% 0% transparent;">
-                            <b class="prod-name"><span class="prof">Consultant Scala Agile Java</span>
-                                <span class="sep">/</span>Valtech Technology<span class="sep">/</span><span class="date">2011-present</span></b>
+                            <b class="prod-name">
+                                <span class="prof">Consultant Scala Agile Java</span>
+                                <span class="sep">/</span>Valtech Technology<span class="sep">/</span><span class="date">2011-present</span>
+                            </b>
                             <p>
                                 blab blab blab blab
                             </p>
                         </li>
                         <li>
-                            <b class="prod-name"><span class="prof">Web Developer</span><span class="sep">/</span>Simpal Graphics<span class="sep">/</span><span class="date">2010-2011</span></b>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                        </li>
-                        <li>
-                            <b class="prod-name"><span class="prof">Art Director</span><span class="sep">/</span>Monsters School<span class="sep">/</span><span class="date">2011-present</span></b>
-                            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis volupta.</p>
+                            <b class="prod-name">
+                                <span class="prof">Développeur Java Java EE</span>
+                                <span class="sep">/</span>Accenture Technology Solutions<span class="sep">/</span><span class="date">2008-2011</span>
+                            </b>
+                            <p>bla bla bla bla bla bla</p>
                         </li>
                         <i class="shadow-bottom"></i>
                     </ul>
@@ -131,15 +133,17 @@
                         <h3><i class="my-skills-ico"></i>Mes compétences</h3>
                         <div class="nano scroll has-scrollbar"><div class="nano-content" tabindex="0">
                             <div class="skill p-0">
-                                <h4><i class="it-programming-ico"></i>IT &amp; Programming</h4>
-                                <h5>CSS 2.0</h5>
-                                <div class="level"><i style="width: 0px;" class="level-length"></i></div>
-                                <h5>CSS 3.0</h5>
-                                <div class="level"><i style="width: 0px;" class="level-length"></i></div>
-                                <h5>JavaScript 1.8</h5>
-                                <div class="level"><i style="width: 0px;" class="level-length"></i></div>
-                                <h5>PHP5</h5>
-                                <div class="level"><i style="width: 0px;" class="level-length"></i></div>
+                                <h4><i class="it-programming-ico"></i>Langages de développement</h4>
+                                <h5>Scala</h5>
+                                <div class="level"><i style="width: 0px;" class="level-length mylevel-exp"></i></div>
+                                <h5>Java / Java EE</h5>
+                                <div class="level"><i style="width: 0px;" class="level-length mylevel-exp">test</i></div>
+                                <h5>Html 5 / Css 3</h5>
+                                <div class="level"><i style="width: 0px;" class="level-length mylevel-mid"></i></div>
+                                <h5>Javascript / Coffeescript</h5>
+                                <div class="level"><i style="width: 0px;" class="level-length mylevel-mid"></i></div>
+                                <h5>SQL</h5>
+                                <div class="level"><i style="width: 0px;" class="level-length mylevel-mid"></i></div>
                             </div>
                             <div class="skill">
                                 <h4><i class="writing-translation-ico"></i>Writing &amp; Translation</h4>
@@ -263,90 +267,6 @@
             </aside>
         </section>
 
-        <section>
-            <h3>Compétences techniques</h3>
-
-            <h4>Langages de développement</h4>
-            <ul>
-                <li id="scala">Scala</li>
-                <li id="java">Java/Jee</li>
-                <li>Html/Css</li>
-                <li>Javascript</li>
-                <li>Coffeescript</li>
-                <li>Sql</li>
-            </ul>
-            <div class="clear"></div>
-
-            <aside id="scalaDiv" class="compAside">
-                <div class='css-arrow-top'></div>
-                <div class="compDiv">
-                    <ul>
-                        <li>2 ans d'expérience<li/>
-                        <li>dont 1 an en tant que leader technique sur l'application VIDAL Menu</li>
-                    </ul>
-                </div>
-            </aside>
-            <aside id="javaDiv" class="compAside">
-                <div class='css-arrow-top'></div>
-                <div class="compDiv">
-                    <ul>
-                        <li>5 ans d'expérience<li/>
-                        <li>leader technique sur plusieurs projets</li>
-                    </ul>
-                </div>
-            </aside>
-
-            <h4>Frameworks</h4>
-            <ul>
-                <li>Spring(core,web)</li>
-                <li>Hibernate</li>
-                <li>Akka(Actor)</li>
-                <li>Play! framework 2</li>
-                <li>JUnit</li>
-                <li>ScalaTest</li>
-                <li>FestAssert</li>
-                <li>Mockito</li>
-                <li>Fitnesse</li>
-            </ul>
-            <div class="clear"></div>
-
-            <h4>Usine logicielle</h4>
-            <ul>
-                <li>Maven</li>
-                <li>Nexus</li>
-                <li>Sbt</li>
-                <li>Ant</li>
-                <li>git/github</li>
-                <li>Subversion</li>
-                <li>Jenkins</li>
-                <li>Teamcity</li>
-                <li>Sonar</li>
-            </ul>
-            <div class="clear"></div>
-
-            <h4>Méthologies</h4>
-            <ul>
-                <li>eXtreme programming</li>
-                <li>Scrum</li>
-                <li>Kanban</li>
-                <li>Uml</li>
-            </ul>
-            <div class="clear"></div>
-
-            <h4>Environnement de développement</h4>
-            <ul>
-                <li>IntelliJ idea</li>
-                <li>Eclipse</li>
-            </ul>
-            <div class="clear"></div>
-
-            <h4>Systèmes</h4>
-            <ul>
-                <li>GNU/Linux (debian)</li>
-                <li>Windows</li>
-            </ul>
-            <div class="clear"></div>
-        </section>
     </article>
 
     <article id="xp">
