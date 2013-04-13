@@ -1,20 +1,52 @@
 $(document).ready ->
-  CV.listenTag()
-  $(".compAside").hide()
+  CV.listenMenu()
+  #CV.listenTag()
+  #$(".compAside").hide()
   #CV.hideAllSubTitle()
   #CV.listenSubTitle()
 
 
-h4_article_selector = "article h4"
-competences_selector = "article li"
+#h4_article_selector = "article h4"
+#competences_selector = "article li"
 
 @CV =
 
-  listenTag : ->
+  listenMenu : ->
+    $("#main-menu li a").on "click", ->
+      CV.activePage(this, $(this).parent("li"))
+
+  activePage : (elemFromEvent, parentElem) ->
+    pageToActive = CV.retrievePageToActive(elemFromEvent)
+
+    CV.hideOldActivePage()
+    CV.unactiveOldMenu()
+    CV.activeNewMenu(parentElem)
+    CV.showNewActivePage(pageToActive)
+
+  retrievePageToActive : (elemFromEvent) ->
+    hrefLinkValue = $(elemFromEvent).attr("href").substring(1)
+    pageToActiveId = "#page-" + hrefLinkValue
+    pageToActiveId
+
+  hideOldActivePage : ->
+    $(".content-pages div.on").addClass("off")
+    $(".content-pages div.on").removeClass("on")
+
+  unactiveOldMenu : ->
+    $("#main-menu li.active").removeClass("active")
+
+  activeNewMenu : (menuToActive) ->
+    $(menuToActive).addClass("active")
+
+  showNewActivePage : (pageToActive) ->
+    $(pageToActive).removeClass("off")
+    $(pageToActive).addClass("on")
+
+  ###listenTag : ->
     $(competences_selector).hover(
       -> CV.handlerIn(this),
       -> CV.handlerOut(this)
-    )
+    )###
 
   handlerIn : (elem) ->
     left = $(elem).position().left
@@ -44,3 +76,4 @@ competences_selector = "article li"
 
   hideSubTitle : (h4this) ->
     $(h4this).next("ul").hide()
+
