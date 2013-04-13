@@ -24,6 +24,24 @@
     padding-right: 20px;
 }
 
+.skills-options {
+    font-size: .6em;
+    color: #D4D4D4;
+}
+
+.skills-options a {
+    text-decoration: none;
+    color: #D4D4D4;
+}
+
+.skills-options a.active {
+    color: #6E6E6E;
+}
+
+.skills-options a:hover {
+    color: #6E6E6E;
+}
+
 .skill.p-0 {
     padding: 0 0 10px;
 }
