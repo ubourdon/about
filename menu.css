@@ -1,0 +1,199 @@
+ul.menu {
+    margin: 0;
+    padding: 0;
+    margin-top: 75px;
+    right: -147px;
+    width: 147px;
+}
+
+ul.menu li:first-child {
+    border-top: 1px solid #F1F1F1;
+    border-radius: 0 5px 0 0;
+}
+
+ul.menu, ul.social-icons {
+    position: absolute;
+    top: 0;
+}
+
+ul.social-icons {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-color: #F1F1F1 -moz-use-text-color #F1F1F1 #F1F1F1;
+    border-image: none;
+    border-radius: 5px 0 0 5px;
+    border-style: solid none solid solid;
+    border-width: 1px medium 1px 1px;
+    left: -40px;
+    margin: 0;
+    margin-top: 75px;
+    overflow: hidden;
+    padding: 9px 9px 9px 8px;
+    width: 22px;
+}
+
+ul.menu, ul.social-icons {
+    position: absolute;
+    top: 0;
+}
+
+.social-icons li.twitter-ico {
+    background-position: -22px 0;
+}
+
+.social-icons li.twitter-ico:hover {
+    background-position: 0 0;
+}
+
+.social-icons li.facebook-ico {
+    background-position: -22px -22px;
+}
+
+.social-icons li.facebook-ico:hover {
+    background-position: 0 -22px;
+}
+
+.social-icons li.linkedin-ico {
+    background-position: -22px -44px;
+}
+
+.social-icons li.linkedin-ico:hover {
+    background-position: 0 -44px;
+}
+
+.social-icons li.blog-ico {
+    background-position: -22px -66px;
+}
+
+.social-icons li.blog-ico:hover {
+    background-position: 0 -66px;
+}
+
+.social-icons li a {
+    display: block;
+    outline: medium none;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.social-icons li:last-child {
+    margin-bottom: 0 !important;
+}
+
+.social-icons li {
+    background: url("img/social-icons-sprite.png") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    list-style: none outside none;
+    margin-bottom: 13px;
+    text-indent: -999em;
+    width: 22px;
+}
+
+ul.menu li {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("img/menu-li-icons-sprite.png") no-repeat scroll 16px 0 #F9F9F9;
+    border-color: #FFFFFF #F1F1F1 #F1F1F1;
+    border-image: none;
+    border-right: 1px solid #F1F1F1;
+    border-style: solid;
+    border-width: 1px;
+    height: 53px;
+    line-height: 53px;
+    list-style: none outside none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: width 0.5s ease 0s;
+    width: 59px;
+}
+
+ul.menu li:last-child {
+    border-radius: 0 0 5px 0;
+}
+
+ul.menu li.home {
+    background-position: 16px 0;
+}
+
+ul.menu li.about {
+    background-position: 16px -106px;
+}
+
+ul.menu li.portfolio {
+    background-position: 16px -212px;
+}
+
+ul.menu li.contact {
+    background-position: 16px -318px;
+}
+
+ul.menu li a {
+    border-left: 1px solid transparent;
+    display: block;
+    font-weight: bold;
+    height: 53px;
+    line-height: 53px;
+    outline: medium none;
+    padding-left: 57px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FDFDFD;
+    width: 83px;
+    color: #6E6E6E;
+}
+
+ul.menu li a:hover i, ul.menu li.active i {
+    opacity: 1;
+}
+
+.menu i.home-ico {
+    background-position: 0 -53px;
+}
+
+.menu i.about-ico {
+    background-position: 0 -159px;
+}
+
+.menu i.portfolio-ico {
+    background-position: 0 -265px;
+}
+
+.menu i.contact-ico {
+    background-position: 0 -371px;
+}
+
+ul.menu li i {
+    background: url("img/menu-li-icons-sprite.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 53px;
+    left: 15px;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ease 0s;
+    width: 26px;
+}
+
+ul.menu li:hover, ul.menu li.active {
+    border-top: 1px solid #F1F1F1;
+}
+ul.menu li.active {
+    width: 142px !important;
+}
+ul.menu li:hover, ul.menu li.active {
+    border-left: medium none;
+    border-radius: 0 5px 5px 0;
+    width: 142px;
+}
+ul.menu li.about {
+    background-position: 16px -106px;
+}
